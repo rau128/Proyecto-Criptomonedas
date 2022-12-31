@@ -1,36 +1,34 @@
 export const monedas = [
   {
-    moneda: "España",
-    id: "eur",
+    FullName: "España",
+    Name: "EUR",
   },
   {
-    moneda: "Brazil",
-    id: "brl",
+    FullName: "Brazil",
+    Name: "BRL",
   },
   {
-    moneda: "Estados Unidos",
-    id: "usd",
+    FullName: "Estados Unidos",
+    Name: "USD",
   },
   {
-    moneda: "Republica Dominicana",
-    id: "dop",
+    FullName: "Republica Dominicana",
+    Name: "DOP",
   },
   {
-    moneda: "Mexico",
-    id: "mxn",
+    FullName: "Mexico",
+    Name: "MXN",
   },
 ];
 
-// https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD
+export let criptoArray = [];
 
-export function ajax(moneda) {
-  const cargarCritpos = async () => {
-    const solicitud = await fetch(
-      `https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=${moneda}`
-    );
-    const { Data } = await solicitud.json();
-    console.log(Data);
-  };
+// export const ajax = async (url) => {
 
-  cargarCritpos();
-}
+//   const solicitud = await fetch(url);
+//   const { Data } = await solicitud.json();
+
+//   setInfo(Data);
+// };
+
+// ajax();

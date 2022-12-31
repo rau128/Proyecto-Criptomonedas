@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { criptoContext } from "../context/CriptoContext";
 
-const useCriptoData = () => {
+const useCriptoContext = () => {
   return useContext(criptoContext);
 };
 
-export default useCriptoData;
+export default useCriptoContext;
